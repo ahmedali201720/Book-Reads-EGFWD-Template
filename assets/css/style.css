@@ -107,6 +107,21 @@ body {
   transition: all 0.4s;
 }
 
+@media screen and (max-width: 768px) {
+  .book-card .changer {
+    right: -20px;
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .book-card .changer {
+    position: absolute;
+    right: 15px;
+    top: 82%;
+  }
+}
+
 .book-card .changer:hover {
   background-color: #2dac32;
   -webkit-transform: scale(1.03);
@@ -118,6 +133,37 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+.search-link {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  color: #ffffff !important;
+  background-color: #2e7c31;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  box-shadow: 0 5px 5px #a3a3a3;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .search-link {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.search-link:hover {
+  background-color: #2eaf33;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Search Page Styles */
@@ -154,6 +200,12 @@ body {
   color: #ffffff;
   z-index: 200;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 450px) {
+  .search-header .back-link {
+    left: 0;
+  }
 }
 
 .search-header .back-link:hover {
@@ -193,13 +245,19 @@ body {
 
 @media screen and (max-width: 375px) {
   .search-header .search-form .input-wrapper input {
-    width: 260px;
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .search-header .search-form .input-wrapper input {
-    width: 250px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .search-header .search-form .input-wrapper input {
+    width: 140px;
   }
 }
 
